@@ -11,6 +11,7 @@ Do not put your solution on Github, or a zip file, or an attachment, code is jus
 
 Choose whatever types you feel appropriate, the purpose of the exercise is to see some of your code and discuss with you the solution you if you make it to an interview.  Your resume will not be looked at without code that passes this test. Submit your code along with your resume to jobs@allresnet.com.  If we like your solution, we'll contact you to continue the process.
 
+```
 [TestCase]
 public void ProgrammerTest() {
     var address = new Address("56 Main St", "Mesa", "AZ", "38574");
@@ -52,3 +53,4 @@ public void ProgrammerTest() {
     Assert.IsNullOrEmpty(company.Id);
     Assert.IsNull(Company.Find(company.Id));
 }
+```
