@@ -5,9 +5,13 @@ namespace ARN.Core
 {
     public class Address : BaseClass
     {
+
         public string Street { get; }
+
         public string City { get; }
+
         public string State { get; }
+
         public string ZipCode { get; }
 
         public Address(string street, string city, string state, string zipCode)
@@ -43,9 +47,11 @@ namespace ARN.Core
             unchecked
             {
                 var hashCode = (Street != null ? Street.GetHashCode() : 0);
+
                 hashCode = (hashCode * 397) ^ (City != null ? City.GetHashCode() : 0);
                 hashCode = (hashCode * 397) ^ (State != null ? State.GetHashCode() : 0);
                 hashCode = (hashCode * 397) ^ (ZipCode != null ? ZipCode.GetHashCode() : 0);
+
                 return hashCode;
             }
         }

@@ -11,6 +11,7 @@ namespace ARN.Core
         private const string EntityType = "ENTITY";
 
         public string Id { get; private set; }
+
         protected string Type { private get; set; }
 
         protected Entity()
@@ -28,7 +29,7 @@ namespace ARN.Core
 
         public override string ToString()
         {
-            return string.Join(Separator.ToString(), new[] {Id, Type});
+            return string.Join(Separator.ToString(), Id, Type);
         }
 
         public override int GetHashCode()
@@ -102,5 +103,6 @@ namespace ARN.Core
 
             return null;
         }
+
     }
 }

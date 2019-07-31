@@ -22,7 +22,6 @@ namespace ARN.Core
             var parts = line.Split(Separator).Skip(2).ToList();
 
             Name = parts[0];
-
             Address = new Address(string.Join(Separator.ToString(), parts.Skip(1).ToArray()));
         }
 

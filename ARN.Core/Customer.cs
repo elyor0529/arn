@@ -26,7 +26,6 @@ namespace ARN.Core
 
             FirstName = parts[0];
             LastName = parts[1];
-
             Address = new Address(string.Join(Separator.ToString(), parts.Skip(2).ToArray()));
         }
 
